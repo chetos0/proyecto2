@@ -151,7 +151,7 @@ function newtonRaphson() {
 
     } catch (error) {
         // Si ocurre un error mostrar el mensaje
-        errorElement.textContent = `No se pudo analizar la fórmula "${func}".`;
+        errorElement.textContent = `No se pudo analizar la fórmula "${func}"y/o la funcion no tiene convergencia en la varibale incial`;
         errorElement.classList.add('visible');
         console.error("Error al procesar la función: ", error.message);
     }
