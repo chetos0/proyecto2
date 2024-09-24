@@ -1,0 +1,149 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #d6d59e;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #28a745;
+    font-size: 50px;
+}
+
+/* Error */
+
+#errorMessage {
+    color: red;
+    display: none;  
+}
+
+#errorMessage.visible {
+    display: block;
+}
+
+/* Circulos */
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4CAF50; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle span {
+    display: block;
+}
+
+.circle:nth-child(1) span::before {
+    content: "¡"; 
+    font-size: 20px;
+}
+
+.circle:nth-child(2) span::before {
+    content: "¡"; 
+    font-size: 20px;
+}
+
+.circle:nth-child(3) span::before {
+    content: "∑ "; 
+    font-size: 20px;
+}
+
+/* Notas  */
+.nota {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #bbbe78;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form div {
+    flex-grow: 1;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Resultados */
+#result {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #bbbe78;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #bbbe78;
+    font-weight: bold;
+}

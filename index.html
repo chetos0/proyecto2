@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Newton-Raphson</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="newton.js" defer></script>
+
+    <!-- Apoyo a las operaciones -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+
+</head>
+
+<body>
+    <h2>Método de Newton-Raphson</h2>
+
+    <div class="iconos">
+        <div class="circle-container">
+            <div class="circle">
+                <span>Observacion!</span>
+            </div>
+            <p class="nota">* Solo deriva con respecto a <b>x</b>.</p>
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <span>Observacion!</span>
+            </div>
+            <p class="nota">* Utiliza la letra <b>x</b> en minúscula.</p>
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <span>∑ Ecuaciones</span>
+            </div>
+            <p class="nota">* Ecuaciones aceptadas: (+, -, *, log(x), e^x).</p>
+        </div>
+    </div>
+
+    <form id="newtonForm">
+        <div>
+            <label for="funcion">Función: </label>
+            <input type="text" id="funcion" placeholder="Ej: x^2+2x">
+            <p id="errorMessage" class="error"></p>
+        </div>
+        <div>
+            <label for="approx">Valor inicial x0: </label>
+            <input type="text" id="approx" placeholder="Ej: 0">
+        </div>
+        <div>
+            <label for="tolerance">Tolerancia deseada: </label>
+            <input type="text" id="tolerance" placeholder="Ej: 0.001">
+        </div>
+        
+        <button type="button" onclick="newtonRaphson()">Calcular</button>
+    </form>
+
+    <div id="result">
+        <!-- Aquí se mostrarán los resultados -->
+    </div>
+    
+    <div id="iterations">
+        <!-- Aquí se mostrarán las iteraciones en una tabla -->
+    </div>
+    
+</body>
+</html>
