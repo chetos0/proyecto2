@@ -151,7 +151,7 @@ function newtonRaphson() {
 
     } catch (error) {
         // Si ocurre un error mostrar el mensaje
-        errorElement.textContent = `No se pudo analizar la fórmula "${func}" y/o la funcionale no es apta para este metodo`;
+        errorElement.textContent = `No se pudo analizar la fórmula "${func}" y/o la funcion no es apta para este metodo`;
         errorElement.classList.add('visible');
         console.error("Error al procesar la función: ", error.message);
     }
